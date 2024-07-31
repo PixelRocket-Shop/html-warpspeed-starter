@@ -8,10 +8,12 @@ This template is created using Tailwind CSS version 3, a utility-first CSS frame
 
 > [Click here to view demo](https://html-warpspeed-full.vercel.app/)
 
-![Template Image](https://pixelrocket-public-assets.s3.eu-west-2.amazonaws.com/github-assets/warpspeed.png)
-
 > **Important:** You are currently viewing only the starter template, which includes only the homepage. The full template is available for free to users who are registered on my website and signed up to my mailing list.
 > [Click here to download the full template](https://pixelrocket.store/free-templates/html-templates/warp-speed-tailwind-html-website-template)
+
+![Template Image](https://pixelrocket-public-assets.s3.eu-west-2.amazonaws.com/github-assets/warpspeed.png)
+
+
 
 
 ## Pages
