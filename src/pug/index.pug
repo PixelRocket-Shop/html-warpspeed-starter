@@ -1,0 +1,336 @@
+html(lang="en")
+    head
+        title Visit www.pixelrocket.store to learn how to become a frontend web developer
+        meta(charset="utf-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1, shrink-to-fit=no")
+        link(rel="preconnect", href="https://fonts.gstatic.com")
+        link(href="template-assets/fonts/fonts.css", rel="stylesheet")
+        link(rel="stylesheet", href="css/tailwind/tailwind.min.css")
+        link(rel="icon", type="image/png", sizes="32x32", href="favicon.png")
+        script(src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js", defer="defer")
+    body(class="antialiased bg-body text-body font-body")
+        div(class="")
+            div
+                p(class="mb-0 py-3 bg-sweetGreen-200 text-sweetGreen-800 text-center")
+                    | Want to learn how to build templates like this one? Visit 
+                    a(href="https://www.pixelrocket.store") www.pixelrocket.store
+            section(class="bg-gradient-to-t from-green-400 via-green-500 to-darkGreen-900", x-data="{ mobileNavOpen: false }")
+                div(class="container mx-auto px-4")
+                    nav(class="py-5 border-b border-white border-opacity-10")
+                        div(class="flex items-center justify-between")
+                            a(href="index.html")
+                                img(src="images/logo-white-3.svg", alt="")
+                            div(class="hidden lg:flex gap-2 p-1 rounded-full bg-white bg-opacity-10")
+                                a(href="index.html", class="px-3 py-2 rounded-full text-white text-sm hover:bg-white hover:bg-opacity-20 transition duration-200") Home
+                                a(href="about.html", class="px-3 py-2 rounded-full text-white text-sm hover:bg-white hover:bg-opacity-20 transition duration-200") About
+                                a(href="pricing.html", class="px-3 py-2 rounded-full text-white text-sm hover:bg-white hover:bg-opacity-20 transition duration-200") Pricing
+                                a(href="blog.html", class="px-3 py-2 rounded-full text-white text-sm hover:bg-white hover:bg-opacity-20 transition duration-200") Blog
+                                a(href="contact.html", class="px-3 py-2 rounded-full text-white text-sm hover:bg-white hover:bg-opacity-20 transition duration-200") Contact
+                            a(href="login.html", class="hidden lg:flex items-center gap-2 text-white hover:text-green-500 transition duration-200")
+                                span(class="text-sm font-medium") Sign in
+                                svg(xmlns="http://www.w3.org/2000/svg", width="16", height="16", viewbox="0 0 16 16", fill="none")
+                                    path(d="M5.5 3L10.5 8L5.5 13", stroke="currentColor", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                            button(class="lg:hidden", x-on:click="mobileNavOpen = !mobileNavOpen")
+                                svg(width="51", height="51", viewbox="0 0 56 56", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                    rect(width="56", height="56", rx="28", fill="white")
+                                    path(d="M37 32H19M37 24H19", stroke="black", stroke-width="1.5", stroke-linecap="round", stroke-linejoin="round")
+                    div(class="flex flex-wrap -m-4 pt-24 pb-40")
+                        div(class="w-full lg:w-1/2 p-4")
+                            h1(class="font-heading text-white text-4xl sm:text-5xl md:text-7xl font-bold max-w-xs md:max-w-lg mb-6") Sync your billing and payments seamlessly
+                            p(class="text-white text-lg max-w-lg mb-12") From effortless transaction tracking to insightful financial reports, take control of your finances with ease.
+                            a(href="#", class="group relative inline-block mb-6 p-0.5 font-semibold overflow-hidden rounded-full")
+                                div(class="absolute inset-0 bg-gradient-to-b from-white to-gray-500 group-focus:to-white opacity-40 group-focus:opacity-20 rounded-full")
+                                div(class="relative z-50 flex items-center py-2 px-4 bg-white group-hover:bg-opacity-80 group-focus:bg-opacity-80 rounded-full transition duration-200")
+                                    p(class="mr-2 text-greenSecondary-900") Get started
+                                    svg(xmlns="http://www.w3.org/2000/svg", width="16", height="16", viewbox="0 0 16 16", fill="none")
+                                        path(d="M9.43032 8.28857L9.4303 8.28856L9.42602 8.29284L6.45312 11.2657V8.20662V4.7275L8.11268 6.38706L9.42602 7.70039C9.59121 7.86558 9.58501 8.13574 9.43032 8.28857Z", fill="black", stroke="currentColor", stroke-width="2")
+                            p(class="text-white text-sm text-opacity-70") Free, forever, with unlimited users.
+                        div(class="w-full lg:w-1/2 p-4")
+                            img(src="template-assets/images/hero/illustration-green2.png", alt="")
+                div(:class="{ 'hidden': !mobileNavOpen, 'block': mobileNavOpen }", class="hidden fixed top-0 left-0 bottom-0 w-5/6 max-w-xs z-50")
+                    div(x-on:click="mobileNavOpen = !mobileNavOpen", class="fixed inset-0 bg-black opacity-20")
+                    nav(class="relative p-8 w-full h-full bg-white overflow-y-auto")
+                        div(class="flex items-center justify-between")
+                            a(href="#", class="inline-block")
+                                img(src="images/logo-black-3.svg", alt="")
+                            button(x-on:click="mobileNavOpen = !mobileNavOpen")
+                                svg(width="24", height="24", viewbox="0 0 24 24", fill="none", xmlns="http://www.w3.org/2000/svg")
+                                    path(d="M6 18L18 6M6 6L18 18", stroke="#111827", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                        ul(class="flex flex-col gap-12 py-12 my-12")
+                            li
+                                a(href="index.html", class="text-sm font-medium") Home
+                            li
+                                a(href="about.html", class="text-sm font-medium") About
+                            li
+                                a(href="pricing.html", class="text-sm font-medium") Pricing
+                            li
+                                a(href="blog.html", class="text-sm font-medium") Blog
+                            li
+                                a(href="contact.html", class="text-sm font-medium") Contact
+                        div(class="text-center")
+                            a(href="#", class="inline-flex items-center gap-2 text-black hover:text-opacity-80 transition duration-200")
+                                span(class="text-sm font-medium") Sign in
+                                svg(xmlns="http://www.w3.org/2000/svg", width="16", height="16", viewbox="0 0 16 16", fill="none")
+                                    path(d="M5.5 3L10.5 8L5.5 13", stroke="currentColor", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+            section(class="bg-darkGreen-900")
+                div(class="container mx-auto px-4")
+                    div(class="sm:border-l sm:border-r border-white border-opacity-20 border-dashed")
+                        div(class="py-32 px-4 sm:px-24")
+                            p(class="uppercase text-sweetGreen-300 text-xs mb-4 tracking-widest") HOW IT WORKS
+                            h1(class="font-heading text-white text-4xl md:text-5xl font-bold mb-20") See how we simplifies your financial tasks
+                            div(class="flex flex-wrap items-center -m-4")
+                                div(class="w-full lg:w-1/3 p-4")
+                                    div(class="mb-10")
+                                        div(class="flex flex-wrap gap-2 mb-2")
+                                            div(class="bg-gradient-to-b from-green-400 via-green-500 to-darkGreen-900 rounded-full p-px w-6 h-6")
+                                                div(class="bg-greenSecondary-900 rounded-full p-1")
+                                                    p(class="text-white text-center text-xs font-semibold") 1
+                                            p(class="text-white text-lg font-semibold") Input Transactions
+                                        p(class="text-white text-opacity-70 max-w-xs") Record your financial transactions such as receipts, and other relevant documents.
+                                    div(class="mb-10")
+                                        div(class="flex flex-wrap gap-2 mb-2")
+                                            div(class="bg-gradient-to-b from-green-400 via-green-500 to-darkGreen-900 rounded-full p-px w-6 h-6")
+                                                div(class="bg-greenSecondary-900 rounded-full p-1")
+                                                    p(class="text-white text-center text-xs font-semibold") 2
+                                            p(class="text-white text-lg font-semibold") Categorization
+                                        p(class="text-white text-opacity-70 max-w-xs") Automatically categorizes and organizes the recorded transactions, such as income and expenses.
+                                    div(class="flex flex-wrap gap-2 mb-2")
+                                        div(class="bg-gradient-to-b from-green-400 via-green-500 to-darkGreen-900 rounded-full p-px w-6 h-6")
+                                            div(class="bg-greenSecondary-900 rounded-full p-1")
+                                                p(class="text-white text-center text-xs font-semibold") 3
+                                        p(class="text-white text-lg font-semibold") Generate Reports
+                                    p(class="text-white text-opacity-70 max-w-xs") Generate financial reports, such as income statements, balance sheets, and cash flow.
+                                div(class="w-full lg:w-2/3 p-4")
+                                    img(class="rounded-3xl w-full object-cover", style="height:600px", src="template-assets/images/how-it-works/illustration-green2.png", alt="")
+            section(class="bg-darkGreen-900 py-28")
+                div(class="container max-w-8xl mx-auto px-4")
+                    p(class="uppercase text-center text-sweetGreen-400 text-xs tracking-widest mb-6") FEATURES
+                    h1(class="font-heading text-white text-center text-4xl md:text-5xl font-semibold mb-6") Designed for the modern business owners
+                    p(class="text-white text-opacity-70 text-lg text-center max-w-xl mx-auto mb-20") Our software provides intuitive bookkeeping solutions, allowing you to focus on growing your business rather than crunching numbers.
+                    div(class="flex flex-wrap -m-4 mb-8")
+                        div(class="w-full md:w-1/2 lg:w-7/12 p-4")
+                            div(class="rounded-2xl bg-greenSecondary-900 py-10 px-5 lg:px-20")
+                                img(class="object-cover w-full mb-8", style="height:400px", src="template-assets/images/features/picture-green5.png", alt="")
+                                p(class="text-white text-center text-xl font-medium") Simple Accounting
+                        div(class="w-full md:w-1/2 lg:w-5/12 p-4")
+                            div(class="rounded-2xl bg-greenSecondary-900 py-10 px-5 lg:px-10")
+                                img(class="object-cover w-full mb-8", style="height:400px", src="template-assets/images/features/picture-green6.png", alt="")
+                                p(class="text-white text-center text-xl font-medium") Detailed Analytics
+                    div(class="flex flex-wrap -m-4 mb-20")
+                        div(class="w-full md:w-1/2 lg:w-5/12 p-4")
+                            div(class="rounded-2xl bg-greenSecondary-900 py-10 px-5 lg:px-10")
+                                img(class="object-cover w-full mb-8", style="height:400px", src="template-assets/images/features/picture-green7.png", alt="")
+                                p(class="text-white text-center text-xl font-medium") Multiple Accounts
+                        div(class="w-full md:w-1/2 lg:w-7/12 p-4")
+                            div(class="rounded-2xl bg-greenSecondary-900 py-10 px-5 lg:px-20")
+                                img(class="object-cover w-full mb-8", style="height:400px", src="template-assets/images/features/picture-green8.png", alt="")
+                                p(class="text-white text-center text-xl font-medium") Cloud-Based Financial System
+                    div(class="text-center")
+                        a(href="#", class="group relative inline-block p-0.5 font-semibold overflow-hidden rounded-full")
+                            div(class="absolute inset-0 bg-gradient-to-b from-white to-gray-500 group-focus:to-white opacity-40 group-focus:opacity-20 rounded-full")
+                            div(class="relative z-50 flex items-center py-2 px-4 bg-white group-hover:bg-opacity-80 group-focus:bg-opacity-80 rounded-full transition duration-200")
+                                p(class="mr-2 text-darkGreen-900") Get Started
+                                svg(xmlns="http://www.w3.org/2000/svg", width="16", height="16", viewbox="0 0 16 16", fill="none")
+                                    path(d="M5.5 3L10.5 8L5.5 13", stroke="currentColor", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+            section(class="bg-darkGreen-900 py-28")
+                div(class="container mx-auto px-4")
+                    h1(class="font-heading text-white text-4xl text-center font-semibold mb-20") Frequently Asked Questions
+                    div(class="max-w-3xl mx-auto")
+                        button(x-data="{ accordion: false }", x-on:click="accordion = !accordion", class="w-full py-6 border-t border-b border-white border-opacity-10")
+                            div(class="flex items-center gap-2")
+                                div(:class="{ 'hidden': accordion }")
+                                    svg(xmlns="http://www.w3.org/2000/svg", width="20", height="20", viewbox="0 0 20 20", fill="none")
+                                        g(clip-path="url(#clip0_139_2681)")
+                                            path(d="M10 4.16669V15.8334", stroke="#7ACC66", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                                            path(d="M4.1665 10H15.8332", stroke="#7ACC66", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                                        defs
+                                            clippath(id="clip0_139_2681")
+                                                rect(width="20", height="20", fill="white", style="fill:white;fill-opacity:1;")
+                                div(:class="{ 'hidden': !accordion }", class="hidden")
+                                    svg(xmlns="http://www.w3.org/2000/svg", width="20", height="20", viewbox="0 0 20 20", fill="none")
+                                        g(clip-path="url(#clip0_139_2681)")
+                                            path(d="M4.1665 10H15.8332", stroke="#7ACC66", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                                        defs
+                                            clippath(id="clip0_139_2681")
+                                                rect(width="20", height="20", fill="white", style="fill:white;fill-opacity:1;")
+                                p(class="text-white text-lg font-semibold text-left") What is Vista?
+                            div(x-ref="container", :style="accordion ? 'max-height: ' + $refs.container.scrollHeight + 'px' : ''", class="overflow-hidden max-h-0 duration-500")
+                                p(class="text-white text-lg text-left mt-5") Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, pariatur! Nobis sint consectetur assumenda corporis.
+                        button(x-data="{ accordion: false }", x-on:click="accordion = !accordion", class="w-full py-6 border-b border-white border-opacity-10")
+                            div(class="flex items-center gap-2")
+                                div(:class="{ 'hidden': accordion }")
+                                    svg(xmlns="http://www.w3.org/2000/svg", width="20", height="20", viewbox="0 0 20 20", fill="none")
+                                        g(clip-path="url(#clip0_139_2681)")
+                                            path(d="M10 4.16669V15.8334", stroke="#7ACC66", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                                            path(d="M4.1665 10H15.8332", stroke="#7ACC66", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                                        defs
+                                            clippath(id="clip0_139_2681")
+                                                rect(width="20", height="20", fill="white", style="fill:white;fill-opacity:1;")
+                                div(:class="{ 'hidden': !accordion }", class="hidden")
+                                    svg(xmlns="http://www.w3.org/2000/svg", width="20", height="20", viewbox="0 0 20 20", fill="none")
+                                        g(clip-path="url(#clip0_139_2681)")
+                                            path(d="M4.1665 10H15.8332", stroke="#7ACC66", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                                        defs
+                                            clippath(id="clip0_139_2681")
+                                                rect(width="20", height="20", fill="white", style="fill:white;fill-opacity:1;")
+                                p(class="text-white text-lg font-semibold text-left") How to add company details on my invoice?
+                            div(x-ref="container", :style="accordion ? 'max-height: ' + $refs.container.scrollHeight + 'px' : ''", class="overflow-hidden max-h-0 duration-500")
+                                p(class="text-white text-lg text-left mt-5") Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, pariatur! Nobis sint consectetur assumenda corporis.
+                        button(x-data="{ accordion: false }", x-on:click="accordion = !accordion", class="w-full py-6 border-b border-white border-opacity-10")
+                            div(class="flex items-center gap-2")
+                                div(:class="{ 'hidden': accordion }")
+                                    svg(xmlns="http://www.w3.org/2000/svg", width="20", height="20", viewbox="0 0 20 20", fill="none")
+                                        g(clip-path="url(#clip0_139_2681)")
+                                            path(d="M10 4.16669V15.8334", stroke="#7ACC66", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                                            path(d="M4.1665 10H15.8332", stroke="#7ACC66", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                                        defs
+                                            clippath(id="clip0_139_2681")
+                                                rect(width="20", height="20", fill="white", style="fill:white;fill-opacity:1;")
+                                div(:class="{ 'hidden': !accordion }", class="hidden")
+                                    svg(xmlns="http://www.w3.org/2000/svg", width="20", height="20", viewbox="0 0 20 20", fill="none")
+                                        g(clip-path="url(#clip0_139_2681)")
+                                            path(d="M4.1665 10H15.8332", stroke="#7ACC66", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                                        defs
+                                            clippath(id="clip0_139_2681")
+                                                rect(width="20", height="20", fill="white", style="fill:white;fill-opacity:1;")
+                                p(class="text-white text-lg font-semibold text-left") What payment methods are accepted?
+                            div(x-ref="container", :style="accordion ? 'max-height: ' + $refs.container.scrollHeight + 'px' : ''", class="overflow-hidden max-h-0 duration-500")
+                                p(class="text-white text-lg text-left mt-5") Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, pariatur! Nobis sint consectetur assumenda corporis.
+                        button(x-data="{ accordion: false }", x-on:click="accordion = !accordion", class="w-full py-6 border-b border-white border-opacity-10")
+                            div(class="flex items-center gap-2")
+                                div(:class="{ 'hidden': accordion }")
+                                    svg(xmlns="http://www.w3.org/2000/svg", width="20", height="20", viewbox="0 0 20 20", fill="none")
+                                        g(clip-path="url(#clip0_139_2681)")
+                                            path(d="M10 4.16669V15.8334", stroke="#7ACC66", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                                            path(d="M4.1665 10H15.8332", stroke="#7ACC66", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                                        defs
+                                            clippath(id="clip0_139_2681")
+                                                rect(width="20", height="20", fill="white", style="fill:white;fill-opacity:1;")
+                                div(:class="{ 'hidden': !accordion }", class="hidden")
+                                    svg(xmlns="http://www.w3.org/2000/svg", width="20", height="20", viewbox="0 0 20 20", fill="none")
+                                        g(clip-path="url(#clip0_139_2681)")
+                                            path(d="M4.1665 10H15.8332", stroke="#7ACC66", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                                        defs
+                                            clippath(id="clip0_139_2681")
+                                                rect(width="20", height="20", fill="white", style="fill:white;fill-opacity:1;")
+                                p(class="text-white text-lg font-semibold text-left") Can I upgrade or downgrade at any time?
+                            div(x-ref="container", :style="accordion ? 'max-height: ' + $refs.container.scrollHeight + 'px' : ''", class="overflow-hidden max-h-0 duration-500")
+                                p(class="text-white text-lg text-left mt-5") Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, pariatur! Nobis sint consectetur assumenda corporis.
+                        button(x-data="{ accordion: false }", x-on:click="accordion = !accordion", class="w-full py-6 border-b border-white border-opacity-10")
+                            div(class="flex items-center gap-2")
+                                div(:class="{ 'hidden': accordion }")
+                                    svg(xmlns="http://www.w3.org/2000/svg", width="20", height="20", viewbox="0 0 20 20", fill="none")
+                                        g(clip-path="url(#clip0_139_2681)")
+                                            path(d="M10 4.16669V15.8334", stroke="#7ACC66", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                                            path(d="M4.1665 10H15.8332", stroke="#7ACC66", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                                        defs
+                                            clippath(id="clip0_139_2681")
+                                                rect(width="20", height="20", fill="white", style="fill:white;fill-opacity:1;")
+                                div(:class="{ 'hidden': !accordion }", class="hidden")
+                                    svg(xmlns="http://www.w3.org/2000/svg", width="20", height="20", viewbox="0 0 20 20", fill="none")
+                                        g(clip-path="url(#clip0_139_2681)")
+                                            path(d="M4.1665 10H15.8332", stroke="#7ACC66", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                                        defs
+                                            clippath(id="clip0_139_2681")
+                                                rect(width="20", height="20", fill="white", style="fill:white;fill-opacity:1;")
+                                p(class="text-white text-lg font-semibold text-left") What happens when I cancel my subscription?
+                            div(x-ref="container", :style="accordion ? 'max-height: ' + $refs.container.scrollHeight + 'px' : ''", class="overflow-hidden max-h-0 duration-500")
+                                p(class="text-white text-lg text-left mt-5") Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, pariatur! Nobis sint consectetur assumenda corporis.
+            section(class="bg-darkGreen-900 py-32", x-data="{ activeSlide: 1, slideCount: 3 }")
+                div(class="container mx-auto px-4")
+                    div(class="flex flex-wrap items-center -m-4")
+                        div(class="w-full lg:w-1/3 xl:w-1/2 p-4")
+                            img(class="mb-12", src="template-assets/images/logos/cronix-logo.svg", alt="")
+                            div(class="overflow-hidden")
+                                div(:style="'transform: translateX(-' + (activeSlide - 1) * 100.5 + '%)'", class="whitespace-nowrap transition-transform duration-500 ease-in-out")
+                                    div(class="inline-block w-full whitespace-normal")
+                                        h1(class="font-heading text-white text-3xl font-medium mb-12 max-w-lg") “The tool just keeps getting better and meets our needs more and more.”
+                                    div(class="inline-block w-full whitespace-normal")
+                                        h1(class="font-heading text-white text-3xl font-medium mb-12 max-w-lg") “As a long-time user, I continue to be impressed by the tool's evolution.”
+                                    div(class="inline-block w-full whitespace-normal")
+                                        h1(class="font-heading text-white text-3xl font-medium mb-12 max-w-lg") “With each update, the tool surpasses our expectations. It's like it anticipates our needs and delivers solutions.”
+                            div(class="flex flex-wrap gap-12")
+                                div(class="overflow-hidden")
+                                    div(:style="'transform: translateX(-' + (activeSlide - 1) * 100.5 + '%)'", class="whitespace-nowrap transition-transform duration-500 ease-in-out")
+                                        div(class="inline-block w-full whitespace-normal")
+                                            div
+                                                p(class="text-white font-bold mb-2") Hanna Stanton
+                                                p(class="text-gray-400 text-sm") Founder of Cronix
+                                        div(class="inline-block w-full whitespace-normal")
+                                            div
+                                                p(class="text-white font-bold mb-2") Alex Johnson
+                                                p(class="text-gray-400 text-sm") CEO of InnoTech
+                                        div(class="inline-block w-full whitespace-normal")
+                                            div
+                                                p(class="text-white font-bold mb-2") Maria Lopez
+                                                p(class="text-gray-400 text-sm") Co-Founder of GreenWave Solutions
+                                div(class="flex items-center gap-6")
+                                    button(x-on:click="activeSlide = activeSlide > 1 ? activeSlide - 1 : slideCount", class="rounded-full bg-white bg-opacity-5 border border-white border-opacity-40 text-opacity-40 p-2 w-10 h-10 flex items-center justify-center hover:bg-opacity-100 hover:border-opacity-100 text-white hover:text-black transition duration-200")
+                                        svg(xmlns="http://www.w3.org/2000/svg", width="20", height="20", viewbox="0 0 20 20", fill="none")
+                                            g
+                                                path(d="M13.125 16.25L6.875 10L13.125 3.75", stroke="currentColor", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                                    button(x-on:click="activeSlide = activeSlide < slideCount ? activeSlide + 1 : 1", class="rounded-full bg-white bg-opacity-5 border border-white border-opacity-40 text-opacity-40 p-2 w-10 h-10 flex items-center justify-center hover:bg-opacity-100 hover:border-opacity-100 text-white hover:text-black transition duration-200")
+                                        svg(xmlns="http://www.w3.org/2000/svg", width="20", height="20", viewbox="0 0 20 20", fill="none")
+                                            path(d="M6.875 3.75L13.125 10L6.875 16.25", stroke="currentColor", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
+                        div(class="w-full lg:w-2/3 xl:w-1/2 p-4")
+                            div(class="overflow-x-auto")
+                                div(class="flex lg:justify-end gap-3")
+                                    img(class="rounded-3xl object-cover", style="height:500px", src="template-assets/images/testimonials/woman-picture1.png", alt="")
+                                    img(class="rounded-3xl object-cover", style="height:500px", src="template-assets/images/testimonials/woman-picture2.png", alt="")
+            section(class="bg-darkGreen-700 py-32 relative overflow-hidden")
+                div(class="container mx-auto px-4")
+                    h1(class="font-heading text-white text-center text-4xl md:text-5xl max-w-md md:max-w-xl mx-auto font-bold mb-4") Want to learn how to build templates like this one?
+                    p(class="text-white text-center mb-10") Visit Pixel Rocket to learn frontend web development
+                    div(class="text-center")
+                        a(href="#", class="group relative inline-block p-0.5 font-semibold overflow-hidden rounded-full")
+                            div(class="absolute inset-0 bg-gradient-to-b from-white to-gray-500 group-focus:to-white opacity-40 group-focus:opacity-20 rounded-full")
+                        div(class="relative z-50 flex items-center w-64 mx-auto text-center justify-center py-2 px-5 bg-white group-hover:bg-white group-focus:bg-white group-hover:bg-opacity-80 group-focus:bg-opacity-80 rounded-full transition duration-200")
+                            a(href="#", class="group relative inline-block p-0.5 font-semibold overflow-hidden rounded-full")
+                            a(href="https://www.pixelrocket.store", class="mr-2 text-darkGreen-900 group-hover:text-pinkSecondary-900 group-focus:text-pinkSecondary-900") Visit Pixel Rocket
+                            svg(xmlns="http://www.w3.org/2000/svg", width="21", height="20", viewbox="0 0 21 20", fill="none")
+                                path(d="M5.49984 10H15.9165M15.9165 10L10.9165 5M15.9165 10L10.9165 15", stroke="#3D0412", style="stroke:#3D0412;stroke:color(display-p3 0.2392 0.0157 0.0706);stroke-opacity:1;", stroke-width="1.5", stroke-linecap="round", stroke-linejoin="round")
+            section(class="bg-darkGreen-900 py-20")
+                div(class="container mx-auto px-4")
+                    div(class="pb-20 border-b border-white border-opacity-30 mb-10")
+                        div(class="flex flex-wrap justify-between -m-4")
+                            div(class="w-full lg:w-1/6 p-4")
+                                a(href="#", class="inline-block")
+                                    img(class="h-16", src="images/logo-white-3.svg", alt="")
+                            div(class="w-full sm:w-1/2 lg:w-1/6 p-4")
+                                ul(class="flex flex-col gap-6")
+                                    li
+                                        a(href="#", class="text-white hover:text-opacity-70 text-xl transition duration-200") Features
+                                    li
+                                        a(href="#", class="text-white hover:text-opacity-70 text-xl transition duration-200") How it works
+                            div(class="w-full sm:w-1/2 lg:w-1/6 p-4")
+                                ul(class="flex flex-col gap-6")
+                                    li
+                                        a(href="#", class="text-white hover:text-opacity-70 text-xl transition duration-200") Pricing
+                                    li
+                                        a(href="#", class="text-white hover:text-opacity-70 text-xl transition duration-200") FAQs
+                            div(class="w-full sm:w-1/2 lg:w-1/6 p-4")
+                                ul(class="flex flex-col gap-6")
+                                    li
+                                        a(href="#", class="text-white hover:text-opacity-70 text-xl transition duration-200") About
+                                    li
+                                        a(href="#", class="text-white hover:text-opacity-70 text-xl transition duration-200") Blog
+                            div(class="w-full sm:w-1/2 lg:w-1/6 p-4")
+                                ul(class="flex flex-col gap-6")
+                                    li
+                                        a(href="#", class="text-white hover:text-opacity-70 text-xl transition duration-200") Contact Us
+                                    li
+                                        a(href="#", class="text-white hover:text-opacity-70 text-xl transition duration-200") Privacy Policy
+                    div(class="flex justify-between items-center flex-wrap gap-6")
+                        p(class="text-white") © Warp Speed. All rights reserved.
+                        div(class="flex flex-wrap gap-6")
+                            a(href="#")
+                                img(src="template-assets/images/logos/twitter-x-logo.svg", alt="")
+                            |         
+                            a(href="#")
+                                img(src="template-assets/images/logos/linkedin-logo.svg", alt="")
+                            |         
+                            a(href="#")
+                                img(src="template-assets/images/logos/instagram-logo.svg", alt="")
+                            |         
+                            a(href="#")
+                                img(src="template-assets/images/logos/facebook-logo.svg", alt="")

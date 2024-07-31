@@ -1,0 +1,27 @@
+<svg width="338" height="238" viewBox="0 0 338 238" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.1" d="M49 237L289 237" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="2" stroke-linecap="round"/>
+<path opacity="0.1" d="M21 84H66" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="2" stroke-linecap="round"/>
+<path opacity="0.1" d="M1 84H9" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="2" stroke-linecap="round"/>
+<path opacity="0.1" d="M287 65H327" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="2" stroke-linecap="round"/>
+<path opacity="0.1" d="M257 1H337" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="2" stroke-linecap="round"/>
+<path d="M247 39L247 190V203C247 207.418 243.418 211 239 211L99 211C94.5817 211 91 207.418 91 203L91 158.795V94.8973V78.923C91 78.2961 91.234 77.6919 91.6562 77.2285L111 56L131.117 33.6483C132.634 31.9626 134.795 31 137.063 31L169 31L239 31C243.418 31 247 34.5817 247 39Z" fill="url(#paint0_linear_330_2327)" stroke="white" stroke-opacity="0.1" style="stroke:white;stroke-opacity:0.1;" stroke-width="2"/>
+<path opacity="0.1" d="M111 159H143" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="3" stroke-linecap="round"/>
+<path opacity="0.1" d="M111 175H143" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="3" stroke-linecap="round"/>
+<path opacity="0.1" d="M111 191H143" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="3" stroke-linecap="round"/>
+<path d="M112.36 54.2182L133 32V71C133 75.4183 129.418 79 125 79H90L112.36 54.2182Z" fill="url(#paint1_linear_330_2327)" style=""/>
+<g opacity="0.2">
+<circle cx="145" cy="100" r="5" fill="white" style="fill:white;fill-opacity:1;"/>
+<circle cx="193" cy="100" r="5" fill="white" style="fill:white;fill-opacity:1;"/>
+<path d="M153 123C153 123 158 117 169 117C180 117 185 123 185 123" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="4" stroke-linecap="round"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_330_2327" x1="111.868" y1="185.566" x2="245.421" y2="185.566" gradientUnits="userSpaceOnUse">
+<stop stop-color="white" stop-opacity="0.1" style="stop-color:white;stop-opacity:0.1;"/>
+<stop offset="1" stop-color="white" stop-opacity="0.05" style="stop-color:white;stop-opacity:0.05;"/>
+</linearGradient>
+<linearGradient id="paint1_linear_330_2327" x1="133" y1="79" x2="100" y2="41" gradientUnits="userSpaceOnUse">
+<stop stop-color="white" stop-opacity="0.15" style="stop-color:white;stop-opacity:0.15;"/>
+<stop offset="1" stop-color="white" stop-opacity="0" style="stop-color:none;stop-opacity:0;"/>
+</linearGradient>
+</defs>
+</svg>
