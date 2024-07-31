@@ -6,6 +6,8 @@ Warp Speed is a dynamic HTML Tailwind CSS template designed to streamline billin
 
 This template is created using Tailwind CSS version 3, a utility-first CSS framework. It offers flexibility and control, making it easy to customize and build responsive, modern web designs efficiently.
 
+> [Click here to view demo](https://html-warpspeed-full.vercel.app/)
+
 ![Template Image](https://pixelrocket-public-assets.s3.eu-west-2.amazonaws.com/github-assets/warpspeed.png)
 
 > **Important:** You are currently viewing only the starter template, which includes only the homepage. The full template is available for free to users who are registered on my website and signed up to my mailing list.
